@@ -37,7 +37,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 Follow me on:
 
-- [TradingView](marciomavungo06)
-- [Reddit](https://www.reddit.com/user/1mmortalNPC/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+- [TradingView]([https://www.tradingview.com/u/marciomavungo06/)
+- [Reddit](https://www.reddit.com/user/1mmortalNPC/)
 
 Contributions and feedback are always welcome!
