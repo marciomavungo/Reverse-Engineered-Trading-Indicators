@@ -15,8 +15,8 @@ My goal is to provide free access to powerful tools that are often sold behind p
 ## Installation
 
 1. Open TradingView → Go to the Pine Script Editor.
-2. Copy the code from the indicator’s ".pine" file.
-3. Paste it into the Pine Script Editor and click 'Add to Chart'.
+2. Copy the code from the indicator’s '.pine' file.
+3. Paste it into the Pine Script Editor and click **Add to Chart**.
 4. Save the script and name it as you like.
 
 ## Contributing
