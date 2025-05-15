@@ -10,7 +10,7 @@ My goal is to provide free access to powerful tools that are often sold behind p
 
 ## List of Indicators
 
-- 
+- Overbought/Oversold_channel (Overbought Oversold Channel/README.md)
 
 ## Installation
 
