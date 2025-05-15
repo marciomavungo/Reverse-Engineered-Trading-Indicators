@@ -1,0 +1,39 @@
+// This Pine Script® code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © marciomavungo06
+
+//@version=6
+indicator("overbought/oversold_channel", shorttitle="ob/os_channel", overlay=false)
+
+// inputs
+fastPrice = input.source(high, title="Fast Price")
+medPrice = input.source(open, title="Med Price")     //I created an input for each to create the possibility of changing the source calculation for each MA.
+slowPrice = input.source(low, title="Slow Price")
+fastLength = input.int(2, title="Fast Length")
+medLength = input.int(2, title="Med Length")        //I created an input for each to create the possibility of changing the length for each MA.
+slowLength = input.int(2, title="Slow Length")
+
+// MA_type_selection
+maType = input.string(defval="SMA", title="Moving Average Type", options=["SMA", "EMA", "WMA", "VWMA", "RMA"])   //I added the possibility to change the type of MA calculation.
+
+// moving_average_function
+f_moving_average(source, length, type) =>
+    if type == "SMA"
+        ta.sma(source, length)
+    else if type == "EMA"
+        ta.ema(source, length)
+    else if type == "WMA"
+        ta.wma(source, length)
+    else if type == "VWMA"
+        ta.vwma(source, length)
+    else
+        ta.rma(source, length)
+
+// moving_averages_calculations 
+fastAvg = f_moving_average(fastPrice, fastLength, maType)
+medAvg = f_moving_average(medPrice, medLength, maType)
+slowAvg = f_moving_average(slowPrice, slowLength, maType)
+
+// plots
+plot(fastAvg, color=color.red, linewidth=1, title="FastAvg")
+plot(medAvg, color=color.purple, linewidth=1, title="MedAvg")
+plot(slowAvg, color=color.green, linewidth=1, title="SlowAvg")
