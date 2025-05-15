@@ -6,5 +6,3 @@ This indicator tells the trader when is an asset overbought or oversold based on
 ## How to use
 When the purple line touch the red line, price is overbought, **sell**.
 When the purple line touches the green line, price is oversold, **buy**.
-
-## Visual representation
